@@ -15,4 +15,16 @@ public class ProgramTests
         // Assert
         return result;
     }
+
+    [TestCase(8, ExpectedResult = 3)]
+    [TestCase(16, ExpectedResult = 4)]
+    [TestCase(5, ExpectedResult = 0)]
+    public int CountDivisibleBy2_ReturnsCorrectNumber(int number)
+    {
+        // Act
+        int result = Program.CountDivisibleBy2(number);
+
+        // Assert
+        return result;
+    }
 }
